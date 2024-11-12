@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Munch & Sip</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="logo">
+                <h1>Munch & Sip</h1>
+            </div>
+            <div class="nav-toggle" id="navToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#galeria">Galería</a></li>
+                <li><a href="#testimonios">Testimonios</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="hero">
+        <div class="hero-content">
+            <h1>Haz de tu evento algo inolvidable</h1>
+            <p>Especialistas en crear momentos dulces y únicos para tus celebraciones</p>
+            <a href="#contacto" class="cta-button">Solicitar Cotización</a>
+        </div>
+    </section>
+
+    <!-- Servicios -->
+    <section id="servicios" class="services">
+        <h2>Nuestros Servicios</h2>
+        <div class="services-grid">
+            <div class="service-card">
+                <img src="/api/placeholder/400/300" alt="Carrito de Dulces">
+                <h3>Carrito de Dulces</h3>
+                <p>Una experiencia dulce con una amplia variedad de golosinas para todos los gustos.</p>
+                <span class="price">Desde $2,000</span>
+                <a href="#contacto" class="service-cta">Cotizar</a>
+            </div>
+            <div class="service-card">
+                <img src="/api/placeholder/400/300" alt="Carrito de Elotes">
+                <h3>Carrito de Elotes</h3>
+                <p>Deliciosos elotes y esquites preparados al momento con todos los condimentos.</p>
+                <span class="price">Desde $1,800</span>
+                <a href="#contacto" class="service-cta">Cotizar</a>
+            </div>
+            <div class="service-card">
+                <img src="/api/placeholder/400/300" alt="Pared de Donas">
+                <h3>Pared de Donas</h3>
+                <p>Una presentación espectacular con donas decorativas para tu evento.</p>
+                <span class="price">Desde $2,500</span>
+                <a href="#contacto" class="service-cta">Cotizar</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Galería -->
+    <section id="galeria" class="gallery">
+        <h2>Galería de Eventos</h2>
+        <div class="gallery-grid">
+            <div class="gallery-item">
+                <img src="/api/placeholder/400/300" alt="Evento 1">
+            </div>
+            <div class="gallery-item">
+                <img src="/api/placeholder/400/300" alt="Evento 2">
+            </div>
+            <div class="gallery-item">
+                <img src="/api/placeholder/400/300" alt="Evento 3">
+            </div>
+            <div class="gallery-item">
+                <img src="/api/placeholder/400/300" alt="Evento 4">
+            </div>
+            <div class="gallery-item">
+                <img src="/api/placeholder/400/300" alt="Evento 5">
+            </div>
+            <div class="gallery-item">
+                <img src="/api/placeholder/400/300" alt="Evento 6">
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonios -->
+    <section id="testimonios" class="testimonials">
+        <h2>Lo que dicen nuestros clientes</h2>
+        <div class="testimonials-grid">
+            <div class="testimonial-card">
+                <img src="/api/placeholder/100/100" alt="Cliente 1" class="testimonial-image">
+                <p class="testimonial-text">"¡Increíble servicio! El carrito de dulces fue la sensación de la fiesta."</p>
+                <h4>María González</h4>
+                <p class="event-type">Boda</p>
+            </div>
+            <div class="testimonial-card">
+                <img src="/api/placeholder/100/100" alt="Cliente 2" class="testimonial-image">
+                <p class="testimonial-text">"La pared de donas fue un éxito total en mi evento corporativo."</p>
+                <h4>Carlos Ruiz</h4>
+                <p class="event-type">Evento Corporativo</p>
+            </div>
+            <div class="testimonial-card">
+                <img src="/api/placeholder/100/100" alt="Cliente 3" class="testimonial-image">
+                <p class="testimonial-text">"Los elotes estuvieron deliciosos, todos los invitados quedaron encantados."</p>
+                <h4>Ana Martínez</h4>
+                <p class="event-type">Fiesta de XV Años</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contacto -->
+    <section id="contacto" class="contact">
+        <h2>Solicita tu Cotización</h2>
+        <div class="contact-container">
+            <form id="contactForm" class="contact-form">
+                <div class="form-group">
+                    <label for="nombre">Nombre completo</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Correo electrónico</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="telefono">Teléfono</label>
+                    <input type="tel" id="telefono" name="telefono" required>
+                </div>
+                <div class="form-group">
+                    <label for="tipoEvento">Tipo de evento</label>
+                    <select id="tipoEvento" name="tipoEvento" required>
+                        <option value="">Selecciona una opción</option>
+                        <option value="boda">Boda</option>
+                        <option value="xv-anos">XV Años</option>
+                        <option value="corporativo">Evento Corporativo</option>
+                        <option value="cumpleanos">Cumpleaños</option>
+                        <option value="otro">Otro</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="fecha">Fecha del evento</label>
+                    <input type="date" id="fecha" name="fecha" required>
+                </div>
+                <div class="form-group">
+                    <label for="mensaje">Mensaje adicional</label>
+                    <textarea id="mensaje" name="mensaje" rows="4"></textarea>
+                </div>
+                <button type="submit" class="submit-button">Enviar Solicitud</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Dulces Momentos</h3>
+                <p>Hacemos de tu evento algo inolvidable con nuestros servicios únicos y personalizados.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Contacto</h3>
+                <p><i class="fas fa-phone"></i> (555) 123-4567</p>
+                <p><i class="fas fa-envelope"></i> info@dulcesmomentos.com</p>
+                <p><i class="fas fa-map-marker-alt"></i> Ciudad de México, México</p>
+            </div>
+            <div class="footer-section">
+                <h3>Síguenos</h3>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-pinterest"></i></a>
+                    <a href="#"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Dulces Momentos. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
