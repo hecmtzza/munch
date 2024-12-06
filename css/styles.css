@@ -40,7 +40,7 @@ h1, h2, h3, h4 {
     z-index: 1000;
     background-color: rgba(255, 255, 255, 0.95);
     transition: var(--transition);
-    height: 80px;
+    height: 120px;
 }
 
 .navbar {
@@ -59,6 +59,12 @@ h1, h2, h3, h4 {
     font-weight: 200;
     text-transform: uppercase;
     letter-spacing: 3px;
+}
+
+.logo img {
+    max-width: 20%;
+    height: auto;
+    display: block;
 }
 
 .nav-links {
@@ -95,7 +101,7 @@ h1, h2, h3, h4 {
 /* Hero Section */
 .hero {
     height: 90vh;
-    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('../images/munch.jpg');
+    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3));
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -103,13 +109,14 @@ h1, h2, h3, h4 {
     align-items: center;
     justify-content: center;
     text-align: center;
-    color: var(--light-color);
-    margin-top: 80px;
+    background-color: #1a1a1a;
+    margin-top: 120px;
 }
 
 .hero-content {
     max-width: 800px;
     padding: 0 2rem;
+    color: #f5f5f5;
 }
 
 .hero h1 {
