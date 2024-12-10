@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Munch & Sip</title>
+    <link rel="icon" href="images/prueba.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -32,10 +33,12 @@
 
     <!-- Hero Section -->
     <section id="inicio" class="hero">
-        <div class="hero-content">
-            <h1>Haz de tu evento algo inolvidable</h1>
-            <p>Especialistas en crear momentos dulces y únicos para tus celebraciones</p>
-            <a href="#contacto" class="cta-button">Solicitar Cotización</a>
+        <div id="balloon-container">
+            <div class="hero-content">
+                <h1>Haz de tu evento algo inolvidable</h1>
+                <p>Especialistas en crear momentos dulces y únicos para tus celebraciones</p>
+                <a href="#contacto" class="cta-button">Solicitar Cotización</a>
+            </div>
         </div>
     </section>
 
@@ -51,7 +54,7 @@
                 <a href="#contacto" class="service-cta">Cotizar</a>
             </div>
             <div class="service-card">
-                <img src="/api/placeholder/400/300" alt="Carrito de Elotes">
+                <img src="images/esquites.jpg" alt="Carrito de Elotes">
                 <h3>Carrito de Elotes</h3>
                 <p>Deliciosos elotes y esquites preparados al momento con todos los condimentos.</p>
                 <span class="price">Desde $1,800</span>
@@ -74,7 +77,7 @@
                 <a href="#contacto" class="service-cta">Cotizar</a>
             </div>
             <div class="service-card">
-                <img src="/api/placeholder/400/300" alt="Carrito de Elotes">
+                <img src="images/beer.jpg" alt="Carrito de Elotes">
                 <h3>Carrito de Micheladas</h3>
                 <p>Micheladas al gusto de tus invitados.</p>
                 <span class="price">Desde $1,800</span>
@@ -139,7 +142,7 @@
             <form id="contactForm" class="contact-form">
                 <div class="form-group">
                     <label for="nombre">Nombre completo</label>
-                    <input type="text" id="nombre" name="nombre" required>
+                    <input type="nombre" id="nombre" name="nombre" required>
                 </div>
                 <div class="form-group">
                     <label for="email">Correo electrónico</label>
@@ -202,5 +205,6 @@
     </footer>
 
     <script src="js/main.js"></script>
+    <script src="js/whatsapp-integration.js"></script>
 </body>
 </html>
