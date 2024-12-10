@@ -114,9 +114,14 @@ h1, h2, h3, h4 {
 }
 
 .hero-content {
-    max-width: 800px;
-    padding: 0 2rem;
+    position: absolute;  /* Posicionamiento absoluto */
+    top: 50%;
+    left: 50%;
     color: #f5f5f5;
+    transform: translate(-50%, -50%);  /* Centrado preciso */
+    text-align: center;
+    max-width: 800px;
+    width: 100%;
 }
 
 .hero h1 {
@@ -407,6 +412,59 @@ h1, h2, h3, h4 {
 .form-group textarea:focus {
     outline: none;
     border-color: var(--accent-color);
+}
+
+#balloon-container {
+  height: 90vh;
+  padding: 1em;
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Asegura el centrado horizontal de los globos */
+    align-items: center;
+  overflow: hidden;
+  transition: opacity 500ms;
+  text-align: center;
+}
+
+.balloon {
+  height: 125px;
+  width: 105px;
+  border-radius: 75% 75% 70% 70%;
+  position: relative;
+}
+
+.balloon:before {
+  content: "";
+  height: 75px;
+  width: 1px;
+  padding: 1px;
+  background-color: #FDFD96;
+  display: block;
+  position: absolute;
+  top: 125px;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.balloon:after {
+    content: "▲";
+    text-align: center;
+    display: block;
+    position: absolute;
+    color: inherit;
+    top: 120px;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+@keyframes float {
+  from {transform: translateY(100vh);
+  opacity: 1;}
+  to {transform: translateY(-300vh);
+  opacity: 0;}
 }
 
 .submit-button {
